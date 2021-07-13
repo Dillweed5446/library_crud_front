@@ -14,7 +14,7 @@ function App () {
 
   useEffect(() => {
     if (isLoading === true) {
-      Axios.get(`${process.env.JAWSDB_MARIA_URL}/api`, {
+      Axios.get(`${process.env.REACT_APP_BACK_END_URL}/api`, {
         headers: {
           'Content-type': 'application/x-www-form-urlencoded'
 
