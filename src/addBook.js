@@ -17,7 +17,7 @@ export default class AddBookForm extends Component {
 
   handleSubmit (e) {
     e.preventDefault()
-    Axios.post(`${process.env.JAWSDB_MARIA_URL}/api`, {
+    Axios.post(`${process.env.REACT_APP_BACK_END_URL}/api`, {
       isbn: `${this.state.isbn}`,
       title: `${this.state.title}`,
       author_id: `${this.state.author_id}`,
